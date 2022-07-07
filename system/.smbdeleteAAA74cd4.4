@@ -1,0 +1,92 @@
+<?php
+
+session_start();
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+if (!defined('DS')) {
+    define('DS', DIRECTORY_SEPARATOR);
+}
+
+if (!defined('ROOT_DIR')) {
+	$__file__ = explode( "system".DS , __FILE__ );
+    define('ROOT_DIR', $__file__[0] );
+	define('SYS_DIR', ROOT_DIR.'system/');
+	define('TMPL_DIR', ROOT_DIR.'template_layout/');
+	define('CTRL_DIR', ROOT_DIR.'controllers/');
+}
+require ROOT_DIR .'wcm/setting.php';
+require ROOT_DIR .'system/configs/config.php';
+require ROOT_DIR .'system/lib/global_lib.php';
+
+use OMCore\OM;
+
+function includeIfExists($file)
+{
+    return file_exists($file) ? include $file : false;
+}
+
+if ((!$loader = includeIfExists(__DIR__.'/../vendor/autoload.php')) && (!$loader = includeIfExists(__DIR__.'/../../../autoload.php'))) {
+    echo 'You must set up the project dependencies, run the following commands:'.PHP_EOL.
+        'curl -sS https://getcomposer.org/installer | php'.PHP_EOL.
+        'php composer.phar install'.PHP_EOL;
+    exit(1);
+}
+
+
+
+$PAGE_VAR["js"] = array();
+$PAGE_VAR["css"] = array("site");
+
+function clearOldFileAtPath($folderPath,$older_day) {
+    if (file_exists($folderPath)) {
+        foreach (new DirectoryIterator($folderPath) as $fileInfo) {
+            if ($fileInfo->isDot()) {
+            continue;
+            }
+            if (time() - $fileInfo->getCTime() >= $older_day*24*60*60) {
+                unlink($fileInfo->getRealPath());
+            }
+        }
+    }
+}
+
+function genNewFileName($filename) {
+    $ext = pathinfo($filename, PATHINFO_EXTENSION);
+    return uniqid().".".$ext;
+}
+
+function genAccessToken($username){
+    $time = strtotime(date('Y-m-d H:i:s'));
+    $characters = array("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z");
+    $out = "";
+    for($i=0;$i<5;$i++){
+        $rand_num = rand(0,60);
+        $alpha_out = $characters[$rand_num];
+        $out = $out.$alpha_out;
+    }
+    $token = md5($username."_".$time."_".$out);
+    return $token;
+}
+
+function generateTransactionId() {
+    $date = new DateTime();
+    return (($date->format('U') * 1000) + mt_rand(0,999));
+}
+
+// function validateRefToken($ref_token){
+    
+//     $param = array();
+//     $param["command"] = "invite_friend.validate_referrer_token";
+//     $param["ref_token"] = $ref_token;
+//     $output = json_decode(OM::cURL('',WEB_META_BASE_API,$param), true);
+    
+//     if ($output["status"] == "200") {
+//         return true;
+//     }else{
+//         return false; 
+//     }
+// }
+
+
+?>

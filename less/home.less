@@ -1,0 +1,1358 @@
+@color-purple: #4a2886;
+#lay-intranet{
+	position: relative;
+	.content-top-height{
+		height: 492px;
+	}
+	.content-bottom-height{
+		height: 630px;
+	}
+	#banner-slide-panel{
+		position: relative;
+	}
+		#banner-slide {
+			li{
+				position: relative;
+				.banner-slide-title{
+					font-size: 16px;
+					font-weight: bold;
+					float: left;
+					margin: 40px 0 10px 0;
+					position: relative;
+					.banner-slide-detail{
+						font-weight: lighter;
+						font-size: 14px;
+						margin: 7px 0 0 0;
+						color: #666666;
+					}
+				}
+			}
+		}
+		.csSlideOuter .csPager.cSpg {
+			padding: 0;
+			text-align: center;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 74%;
+		}
+		.csAction > a{
+			top: 38%;
+			z-index: 99999;
+			width: 10px;
+			height: 18px;
+			background-image: url('../images/layout/arrow-slide.png');
+		}
+		.csAction > .csNext {
+			background-position: -12px 0;
+		}
+
+		.content-main-panel{
+			// margin: 10px 0;
+			padding: 10px 2px;
+			.content-main-title{
+				text-align: left;
+				color: @color-purple;
+				font-size: 16px;
+			}
+			.content-main-more{
+				text-align: right;
+				color: #a1a1a1;
+				font-size: 10px;
+				line-height: 20px;
+				cursor: pointer;
+				a{
+					color: #a1a1a1;
+				}
+			}
+		}
+		#eic-analysis-content{
+			background: #ece6f7;
+			.content-main-panel{
+				padding: 10px 10px;
+			}
+			.content-analysis-panel{
+				padding: 0 10px 5px;
+				height: 600px;
+				overflow: auto;
+				.list-detail-analysis{
+					padding: 10px 0;
+					border-top: 1px solid #e2e2e2;
+					position: relative;
+				}
+
+				.list-analysis-main{
+					.img-panel{
+						float: left;
+						img{
+							margin: 0;
+						}
+						.img-panel-special{
+							padding: 5px;
+						}
+					}
+					.list-title{
+						font-size: 18px;
+						float: left;
+						margin: 10px 0;
+						color: #000;
+						.list-title-special{
+							margin: 0 0 0 10px;
+						}
+						.text-title{
+						}
+						.list-authur{
+							margin: 5px 0;
+							font-size: 12px;
+							color: #4b2885;
+						}
+					}
+					.text-title-normal{
+						font-size: 14px;
+						font-weight: lighter;
+					}
+					.list-cat{
+						position: absolute;
+						bottom: 5px;
+						right: 10px;
+						font-size: 9px;
+						color: #fff;
+						font-weight: bold;
+						padding: 2px 10px;
+						text-align: center;
+					}
+				}
+			}
+		}
+		#calendar-panel{
+			.csAction > a{
+				top: 50%;
+			}
+		}
+		#content-list-news{
+			margin: 0 0 12px 0;
+			height: 449px;
+			.list-detail{
+				margin: 5px 0;
+				font-size: 14px;
+				color: #000000;
+				a{
+					display: block;
+					margin: 5px 0;
+				}
+				span{
+					display: block;
+					margin: 5px 0;
+				}
+				.list-detail-time{
+					color: #8c8c8c;
+					font-size: 12px;
+					font-style: italic;
+				}
+			}
+			.list-detail-line{
+				border-bottom: 1px solid #ebebeb;
+			}
+		}
+
+		.responsive-calendar{
+			.controls{
+				margin: 10px 0;
+				font-size: 14px;
+				.pull-left{
+					float: left;
+				}
+				.pull-right{
+					float: right;
+				}
+				.btn-calendar-prev{
+					background-position: 0 -22px;
+					width: 7px;
+					height: 13px;
+					display: block;
+					text-indent: -9999px;
+				}
+				.btn-calendar-next{
+					background-position: -7px -21px;
+					width: 7px;
+					height: 13px;
+					display: block;
+					text-indent: -9999px;
+				}
+			}
+			.day.active a{
+				background-color: #dbd4e7;
+			}
+			.day a{
+				margin: 5px 0 0 31%;
+				width: 23px;
+				height: 22px;
+				line-height: 22px;
+				padding: 0;
+				color: #555555;
+			}
+			.day{
+				color: #a4a4a4;
+				&.active {
+			      a {
+			      	border-radius: 5px;
+			        background-color: #dbd4e7;
+			        color: #000;
+
+			        &:hover {
+			      		border-radius: 5px;
+			          background-color: lighten(#ecab2b, 10%);
+			        }
+			      }
+
+			      .not-current {
+			      	border-radius: 5px;
+			        background-color: lighten(#ecab2b, 30%);
+			        color: #000;
+
+			        &:hover {
+			      		border-radius: 5px;
+			            background-color: lighten(#ecab2b, 40%);
+			        }
+			      }
+			    }
+				a{
+					&:hover {
+			      		border-radius: 5px;
+			            background-color: #ecab2b;
+			        }
+				}
+			    &.not-current {
+			      a {
+			        color: #d3d3d3;
+			      }
+			    }
+			}
+			.today a {
+				border-radius: 5px;
+			    background: #ecab2b;
+			    color: #000;
+			}
+
+		}
+		.csSlideOuter .csPager.cSpg > li a{
+			background: url('../images/layout/btn-slide.png');
+			background-position: -11px 0;
+			width: 10px;
+			height: 10px;
+			display: inline-block;
+		}
+		.csSlideOuter .csPager.cSpg > li.active a{
+			background: url('../images/layout/btn-slide.png');
+			background-position: 0 0;
+			width: 10px;
+			height: 10px;
+			display: inline-block;
+		}
+		hr{
+			margin: 3px 0;
+			color: #e2e2e2;
+		}
+		hr.detail-analysis{
+			margin: 3px 0;
+			color: #e2e2e2;
+		}
+
+		.calendar-upcoming{
+			margin: 15px 0 15px 0;
+			color: @color-purple;
+			height: 147px;
+			overflow: auto;
+			.calendar-upcoming-header{
+				font-size: 16px;
+				margin: 0 0 10px 0;
+				font-weight: bold;
+				display: none;
+			}
+			.calendar-upcoming-title{
+				font-size: 14px;
+				margin: 5px 0 0 0;
+				font-weight: bold;
+			}
+			ul{
+				list-style: disc;
+				padding-left: 16px;
+				margin: 0 0 20px 0;
+				a{
+					color: #4a2886;
+				}
+			}
+		}
+		.quick-link-slide{
+			img{
+				margin: 0;
+			}
+		}
+
+	.box-float-left{
+		float: left;
+	}
+	.box-float-right{
+		float: right;
+	}
+
+		.box-title{
+			font-size: 16px;
+			color: #fff;
+			line-height: 22px;
+		}
+		#box-market-panel{
+			background-color: #2e2e2e;
+			#box-market-header{
+				background-color: #141414;
+				padding: 10px 15px;
+				#box-filter{
+					color: #545454;
+					font-size: 12px;
+					font-weight: bold;
+					cursor: pointer;
+					.box-filter-normal{
+						margin: 0 0 0 10px;
+						padding: 3px 6px;
+					}
+					.box-filter-active{
+						background-color: #432e69;
+						color: #fff;
+					}
+				}
+			}
+			#box-market-list-panel{
+				border-top: 1px solid @color-purple;
+				color: #fff;
+				position: relative;
+				height: 191px;
+				.box-market-list-main{
+					padding: 0 7px;
+					border-bottom: 1px solid #3f3f3f;
+				}
+				.border-right-none{
+					border-right: none;
+				}
+				.box-market-list-title{
+					padding: 0;
+					text-align: center;
+					font-size: 12px;
+					font-weight: bold;
+					div{
+						padding: 3px 0;
+					}
+				}
+				.box-market-list-padding-right{
+					// padding: 0 1px 0 0;
+				}
+				#box-markets{
+					padding: 0 7px;
+				}
+				.box-market-list{
+					padding: 0;
+					font-size: 12px;
+					text-align: left;
+					height: 195px;
+					overflow: auto;
+					ul .box-market-list-normal{
+						.text-list-title{
+							padding: 3px 0 4px 2px;
+							font-size: 11px;
+						}
+						.box-list-number{
+							position: relative;
+							padding: 5px 2px;
+							.box-list-number-left{
+								font-size: 13px;
+								padding: 0 0 0 2px;
+							}
+							.box-list-number-right{
+								font-size: 10px;
+							}
+							.box-arrow-bottom{
+								display: block;
+								position: absolute;
+								left: 0px;
+								right: 0px;
+								bottom: 0px;
+								z-index: 99;
+								border-color: transparent transparent #383838 transparent;
+								border-image: none;
+								border-style: solid;
+								border-width: 7px;
+								height: 1px;
+								width: 1px;
+								margin: 0 auto;
+							}
+						}
+					}
+				}
+				.graph-markets-panel{
+					display: none;
+					position: absolute;
+					top: 70px;
+					right: 0;
+					left: 20px;
+					background-color: #383838;
+					z-index: 999;
+					width: 90%;
+					box-shadow: black 3px 3px 24px;
+					.graph-title{
+						padding: 10px 10px 5px;
+						font-size: 16px;
+					}
+					.graph-list{
+						border-top: 1px solid #505050;
+						height: 222px;
+						.market-iframe-panel iframe{
+							min-height: 200px;
+						}
+
+						.graph-list-left{
+							background-color: #2e2e2e;
+							.list-graph-panel{
+								padding: 10px 10px;
+								height: 200px;
+								overflow: auto;
+							}
+						}
+						.title-content{
+							padding: 2px 10px;
+						}
+						.box-content{
+							padding: 6px 0px;
+							position: relative;
+							// width: 79%;
+						}
+						.box-padding-left{
+							padding: 0 0 0 3px;
+						}
+						.box-padding-right{
+							padding: 0 0 0 3px;
+						}
+						.icon-arrow-right{
+							position: absolute;
+							top: 10px;
+							right: -7px;
+							background: url('../images/home/chevron-icon.png');
+							background-position: 0 -9px;
+							width: 7px;
+							height: 13px;
+							display: none;
+						}
+						.icon-arrow-right-active{
+							display: block;
+						}
+						.box-content-active{
+							border: 2px solid #fff;
+						}
+					}
+				}
+				#box-markets-edit-panel{
+						background-color: #141414;
+						position: absolute;
+						top: 0;
+						left: 0;
+						height: 214px;
+						width: 100%;
+						padding: 7px 0 12px;
+						display: none;
+					#box-markets-edit{
+						width: 100%;
+						font-size: 12px;
+						.market-edit-title{
+							position: relative;
+							.markets-main-title{
+								padding: 10px 5px 7px 4px;
+								line-height: 12px;
+								margin: 0 0 0 2px;
+								background-color: #2a2a2a;
+								font-size: 10px;
+								.markets-detail-edit{
+									height: 181px;
+									overflow: auto;
+								}
+							}
+							.markets-main-title-first{
+								margin-left: 8px;
+							}
+							.markets-main-title-last{
+								margin-right: 8px;
+							}
+						}
+					}
+					#list-menu-markets{
+						background-color: #454545;
+						position: absolute;
+						top: 100px;
+						left: 106px;
+						z-index: 99;
+						display: none;
+						li{
+							list-style: none;
+							margin: 0;
+							border-bottom: 1px solid #525252;
+							cursor: pointer;
+						}
+						.title-main{
+							padding: 15px 15px 5px 10px;
+							font-size: 16px;
+						}
+						.title-child{
+							padding: 5px 15px 5px 10px;
+							font-size: 12px;
+						}
+						.glyphicon-ok{
+							display: none;
+							padding: 0 0 0 18px;
+						}
+						.glyphicon-active{
+							display: inline-block;
+						}
+					}
+					.list-edit-cutomize{
+						padding: 18px 0;
+						cursor: pointer;
+					}
+					.icon-select{
+						background: url('../images/home/chevron-icon.png');
+						width: 7px;
+						height: 4px;
+						display: block;
+						margin: 2px 0;
+					}
+					.icon-down{
+						background-position: 0 -4px;
+					}
+					.icon-down-active{
+						background-position: 0 0;
+					}
+				}
+			}
+		}
+		.box-top{
+			margin: 10px 0;
+		}
+		.box-market-update{
+			color: #909090;
+			text-align: right;
+			padding: 0 20px;
+			margin: 5px 0;
+			font-style: italic;
+			font-size: 10px;
+		}
+		#box-eic-forecast{
+			background-color: #141414;
+			font-size: 16px;
+			#box-eic-forecast-header{
+				color: #fff;
+				li{
+					height: 30px;
+					line-height: 30px;
+					.box-eic-forecast-list-main{
+						padding: 0 3px 0 15px;
+					}
+					.box-eic-forecast-list-title{
+						font-size: 16px;
+					}
+					.box-eic-forecast-list-percent{
+						font-size: 14px;
+						text-align: center;
+						padding: 2px 0 0 0;
+					}
+				}
+			}
+			#box-eic-forecast-list{
+				border-top: 1px solid @color-purple;
+				color: #fff;
+				height: 150px;
+				overflow: auto;
+				li.odd{
+					background-color: #2e2e2e;
+				}
+				li.even{
+					background-color: #515151;
+				}
+
+				li{
+					height: 30px;
+					line-height: 30px;
+					.odd{
+						background-color: #2e2e2e;
+					}
+					.box-eic-forecast-list-main{
+						padding: 0 3px 0 15px;
+					}
+					.box-eic-forecast-list-title{
+						font-size: 12px;
+					}
+					.box-eic-forecast-list-percent{
+						font-size: 12px;
+						text-align: center;
+					}
+					.percent-left{
+						border-right: 1px solid #3f3f3f;
+					}
+				}
+			}
+			.box-market-update{
+				background-color: #141414;
+			}
+			.box-detail-right{
+				color: #fff;
+
+			}
+		}
+		#box-industries-panel{
+			background-color: #2e2e2e;
+			#box-industries-header{
+				background-color: #141414;
+				padding: 10px 15px;
+				.box-title{
+					font-size: 16px;
+				}
+			}
+			#box-industries-list-panel{
+				border-top: 1px solid @color-purple;
+				color: #fff;
+				#list-industries-content{
+					position: relative;
+					padding: 0 0 0;
+					height: 544px;
+					overflow: auto;
+					li.list{
+						border-bottom: 1px solid #3f3f3f;
+						padding: 1px 15px 10px;
+						position: relative;
+						.title{
+							font-size: 14px;
+							margin: 15px 0 10px;
+						}
+						.inner-list{
+							list-style: disc;
+							padding: 0 0 0 17px;
+							font-size: 14px;
+							color: #bbbbbb;
+							li{
+								margin: 3px 0;
+							}
+						}
+						.logo-industries{
+							position: absolute;
+							bottom: 0px;
+							right: 0px;
+						}
+					}
+				}
+				#industries-edit-content{
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					width: 100%;
+					height: 100%;
+					background-color: #141414;
+					overflow: auto;
+					#list-edit-panel{
+						.list-edit-content{
+							border-bottom: 1px solid #d1d1d1;
+							padding: 6px 16px;
+							.list-edit-content-check{
+								input{
+									display: none;
+								}
+								.checkbox-btn{
+									background: url('../images/home/btn-uncheck.png');
+									width: 24px;
+									height: 24px;
+									display: inline-block;
+								}
+								.checkbox-checked{
+									background: url('../images/home/btn-checked.png');
+									width: 24px;
+									height: 24px;
+									display: inline-block;
+								}
+							}
+							.list-edit-content-title{
+								line-height: 23px;
+								padding: 0 0 0 10px;
+							}
+							.list-edit-content-menu{
+								padding: 5px 0;
+							}
+						}
+					}
+				}
+				#btn-add-industries{
+					padding: 21px 0;
+					text-align: center;
+					cursor: pointer;
+				}
+			}
+
+		}
+			.box-customize{
+			background-color: #212121;
+			border: 1px solid #3f3f3f;
+			padding: 5px 10px;
+			text-align: center;
+			color: #fff;
+			font-size: 10px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+}
+
+#lay-external{
+	.content-top-height{
+		height: 492px;
+	}
+	.content-bottom-height{
+		height: 630px;
+	}
+	#banner-slide-panel{
+		position: relative;
+		height: 860px;
+		// #banner-slide{
+		// 	height: 374px;
+		// }
+	}
+		#banner-slide {
+			li{
+				position: relative;
+				.banner-slide-title{
+					font-size: 16px;
+					font-weight: bold;
+					float: left;
+					margin: 40px 0 10px 0;
+					position: relative;
+					.banner-slide-detail{
+						font-weight: lighter;
+						font-size: 14px;
+						margin: 7px 0 0 0;
+						color: #666666;
+					}
+				}
+			}
+		}
+		.csSlideOuter .csPager.cSpg {
+			padding: 0;
+			text-align: center;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 315px;
+		}
+		.csAction > a{
+			top: 38%;
+			z-index: 99999;
+			width: 12px;
+			height: 21px;
+			background-image: url('../images/layout/arrow-slide.png');
+		}
+		.csAction > .csNext {
+			background-position: -12px 0;
+		}
+
+		.content-main-panel{
+			// margin: 10px 0;
+			padding: 10px 2px;
+			.content-main-title{
+				text-align: left;
+				color: @color-purple;
+				font-size: 16px;
+			}
+			.content-main-more{
+				text-align: right;
+				font-size: 10px;
+				line-height: 20px;
+				cursor: pointer;
+				a{
+					color: #a1a1a1;
+				}
+			}
+		}
+		#eic-analysis-content{
+			background: #ece6f7;
+			.content-main-panel{
+				padding: 10px 10px;
+			}
+			.content-analysis-panel{
+				padding: 0 10px 5px;
+				height: 600px;
+				overflow: auto;
+				.list-detail-analysis{
+					padding: 10px 0;
+					border-top: 1px solid #e2e2e2;
+					position: relative;
+				}
+
+				.list-analysis-main{
+					.img-panel{
+						float: left;
+						img{
+							margin: 0;
+						}
+						.img-panel-special{
+							padding: 5px;
+						}
+					}
+					.list-title{
+						font-size: 18px;
+						float: left;
+						margin: 10px 0;
+						color: #000;
+						.list-title-special{
+							margin: 0 0 0 10px;
+						}
+						.text-title{
+						}
+						.list-authur{
+							margin: 5px 0;
+							font-size: 12px;
+							color: #4b2885;
+						}
+					}
+					.text-title-normal{
+						font-size: 14px;
+						font-weight: lighter;
+					}
+					.list-cat{
+						position: absolute;
+						bottom: 5px;
+						right: 10px;
+						font-size: 9px;
+						color: #fff;
+						font-weight: bold;
+						padding: 2px 10px;
+						text-align: center;
+					}
+				}
+			}
+		}
+		#content-list-news{
+			margin: 0 0 12px 0;
+			height: 449px;
+			.list-detail{
+				margin: 5px 0;
+				font-size: 14px;
+				color: #000000;
+				a{
+					display: block;
+					margin: 5px 0;
+				}
+				span{
+					display: block;
+					margin: 5px 0;
+				}
+				.list-detail-time{
+					color: #8c8c8c;
+					font-size: 12px;
+					font-style: italic;
+				}
+			}
+			.list-detail-line{
+				border-bottom: 1px solid #ebebeb;
+			}
+		}
+
+		.responsive-calendar{
+			.controls{
+				margin: 10px 0;
+				font-size: 14px;
+				.pull-left{
+					float: left;
+				}
+				.pull-right{
+					float: right;
+				}
+				.btn-calendar-prev{
+					background-position: 0 -22px;
+					width: 7px;
+					height: 13px;
+					display: block;
+					text-indent: -9999px;
+				}
+				.btn-calendar-next{
+					background-position: -7px -21px;
+					width: 7px;
+					height: 13px;
+					display: block;
+					text-indent: -9999px;
+				}
+			}
+			.day.active a{
+				background-color: #dbd4e7;
+			}
+			.day a{
+				margin: 5px 0 0 31%;
+				width: 23px;
+				height: 22px;
+				line-height: 22px;
+				padding: 0;
+				color: #555555;
+			}
+			.day{
+				color: #a4a4a4;
+				&.active {
+			      a {
+			      	border-radius: 5px;
+			        background-color: #dbd4e7;
+			        color: #000;
+
+			        &:hover {
+			      		border-radius: 5px;
+			          background-color: lighten(#ecab2b, 10%);
+			        }
+			      }
+
+			      .not-current {
+			      	border-radius: 5px;
+			        background-color: lighten(#ecab2b, 30%);
+			        color: #000;
+
+			        &:hover {
+			      		border-radius: 5px;
+			            background-color: lighten(#ecab2b, 40%);
+			        }
+			      }
+			    }
+				a{
+					&:hover {
+			      		border-radius: 5px;
+			            background-color: #ecab2b;
+			        }
+				}
+			    &.not-current {
+			      a {
+			        color: #d3d3d3;
+			      }
+			    }
+			}
+			.today a {
+				border-radius: 5px;
+			    background: #ecab2b;
+			    color: #000;
+			}
+
+		}
+		.csSlideOuter .csPager.cSpg > li a{
+			background: url('../images/layout/btn-slide.png');
+			background-position: -11px 0;
+			width: 10px;
+			height: 10px;
+			display: inline-block;
+		}
+		.csSlideOuter .csPager.cSpg > li.active a{
+			background: url('../images/layout/btn-slide.png');
+			background-position: 0 0;
+			width: 10px;
+			height: 10px;
+			display: inline-block;
+		}
+		hr{
+			margin: 3px 0;
+			color: #e2e2e2;
+		}
+		hr.detail-analysis{
+			margin: 3px 0;
+			color: #e2e2e2;
+		}
+
+		.calendar-upcoming{
+			margin: 15px 0 15px 0;
+			color: @color-purple;
+			height: 147px;
+			overflow: auto;
+			.calendar-upcoming-header{
+				font-size: 16px;
+				margin: 0 0 10px 0;
+				font-weight: bold;
+				display: none;
+			}
+			.calendar-upcoming-title{
+				font-size: 14px;
+				margin: 5px 0 0 0;
+				font-weight: bold;
+			}
+			ul{
+				list-style: disc;
+				padding-left: 16px;
+				margin: 0 0 20px 0;
+				a{
+					color: #4a2886;
+				}
+			}
+		}
+		.quick-link-slide{
+			img{
+				margin: 0;
+			}
+		}
+
+	.box-float-left{
+		float: left;
+	}
+	.box-float-right{
+		float: right;
+	}
+
+		.box-title{
+			font-size: 16px;
+			color: #fff;
+			line-height: 22px;
+		}
+		#box-market-panel{
+			background-color: #2e2e2e;
+			.box-market-list-detail{
+				cursor: default;
+			}
+			#box-market-header{
+				background-color: #141414;
+				padding: 10px 15px;
+				#box-filter{
+					color: #545454;
+					font-size: 12px;
+					font-weight: bold;
+					cursor: pointer;
+					.box-filter-normal{
+						margin: 0 0 0 10px;
+						padding: 3px 6px;
+					}
+					.box-filter-active{
+						background-color: #432e69;
+						color: #fff;
+					}
+				}
+			}
+			#box-market-list-panel{
+				border-top: 1px solid @color-purple;
+				color: #fff;
+				position: relative;
+				.box-market-list-main{
+					padding: 0 5px;
+					border-bottom: 1px solid #3f3f3f;
+				}
+				.border-right-none{
+					border-right: none;
+				}
+				.box-market-list-title{
+					padding: 0;
+					text-align: center;
+					font-size: 12px;
+					font-weight: bold;
+					div{
+						padding: 3px 0;
+					}
+				}
+				.box-market-list-padding-right{
+					padding: 0 1px 0 0;
+				}
+				#box-markets{
+					padding: 0 5px;
+				}
+				.box-market-list{
+					padding: 0;
+					font-size: 12px;
+					text-align: left;
+					height: 175px;
+					overflow: auto;
+					ul .box-market-list-normal{
+						.text-list-title{
+							padding: 3px 0 4px 2px;
+							font-size: 11px;
+						}
+						.box-list-number{
+							padding: 5px 2px;
+							.box-list-number-left{
+								font-size: 14px;
+							}
+							.box-list-number-right{
+								font-size: 10px;
+							}
+
+						}
+					}
+				}
+				#box-markets-edit{
+					position: absolute;
+					background-color: #2a2a2a;
+					top: 0;
+					left: 0;
+					height: auto;
+					width: 100%;
+				}
+			}
+		}
+		.box-top{
+			margin: 0 0 10px 0;
+		}
+		#quick-links-panel{
+			margin: 10px 0 0 0;
+		}
+		.box-market-update{
+			color: #909090;
+			text-align: right;
+			padding: 0 20px;
+			margin: 5px 0;
+			font-style: italic;
+			font-size: 10px;
+		}
+		#box-eic-forecast{
+			background-color: #141414;
+			font-size: 16px;
+			#box-eic-forecast-header{
+				color: #fff;
+				li{
+					height: 30px;
+					line-height: 30px;
+					.box-eic-forecast-list-main{
+						padding: 0 3px 0 15px;
+					}
+					.box-eic-forecast-list-title{
+						font-size: 16px;
+					}
+					.box-eic-forecast-list-percent{
+						font-size: 14px;
+						text-align: center;
+						padding: 2px 0 0 0;
+					}
+				}
+			}
+			#box-eic-forecast-list{
+				border-top: 1px solid @color-purple;
+				color: #fff;
+				height: 150px;
+				overflow: auto;
+				li.odd{
+					background-color: #2e2e2e;
+				}
+				li.even{
+					background-color: #515151;
+				}
+
+				li{
+					height: 30px;
+					line-height: 30px;
+					.odd{
+						background-color: #2e2e2e;
+					}
+					.box-eic-forecast-list-main{
+						padding: 0 3px 0 15px;
+					}
+					.box-eic-forecast-list-title{
+						font-size: 12px;
+					}
+					.box-eic-forecast-list-percent{
+						font-size: 12px;
+						text-align: center;
+					}
+					.percent-left{
+						border-right: 1px solid #3f3f3f;
+					}
+				}
+			}
+			.box-market-update{
+				background-color: #141414;
+			}
+			.box-detail-right{
+				color: #fff;
+
+			}
+		}
+		#box-industries-panel{
+			background-color: #2e2e2e;
+			#box-industries-header{
+				background-color: #141414;
+				padding: 10px 15px;
+				.box-title{
+					font-size: 16px;
+				}
+			}
+			#box-industries-list-panel{
+				border-top: 1px solid @color-purple;
+				color: #fff;
+				#list-industries-content{
+					position: relative;
+					padding: 0 0 0 0;
+					height: 666px;
+					overflow: auto;
+					li.list{
+						border-bottom: 1px solid #3f3f3f;
+						padding: 1px 15px 10px;
+						position: relative;
+						.title{
+							font-size: 14px;
+							margin: 15px 0 10px;
+						}
+						.inner-list{
+							list-style: disc;
+							padding: 0 0 0 17px;
+							font-size: 14px;
+							color: #bbbbbb;
+							li{
+								margin: 3px 0;
+							}
+						}
+						.logo-industries{
+							position: absolute;
+							bottom: 0px;
+							right: 0px;
+						}
+					}
+				}
+				#industries-edit-content{
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					width: 100%;
+					height: 100%;
+					background-color: #141414;
+					overflow: scroll;
+					#list-edit-panel{
+						.list-edit-content{
+							border-bottom: 1px solid #d1d1d1;
+							padding: 6px 16px;
+							.list-edit-content-check{
+								input{
+									display: none;
+								}
+								.checkbox-btn{
+									background: url('../images/home/btn-uncheck.png');
+									width: 24px;
+									height: 24px;
+									display: inline-block;
+								}
+								.checkbox-checked{
+									background: url('../images/home/btn-checked.png');
+									width: 24px;
+									height: 24px;
+									display: inline-block;
+								}
+							}
+							.list-edit-content-title{
+								line-height: 23px;
+								padding: 0 0 0 10px;
+							}
+							.list-edit-content-menu{
+								padding: 5px 0;
+							}
+						}
+					}
+				}
+				#btn-add-industries{
+					padding: 21px 0;
+					text-align: center;
+					cursor: pointer;
+				}
+			}
+
+		}
+			.box-customize{
+			background-color: #212121;
+			border: 1px solid #3f3f3f;
+			padding: 5px 10px;
+			text-align: center;
+			color: #fff;
+			font-size: 10px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+}
+
+
+.text-new{
+	color: #ecab2b;
+}
+.text-pin{
+	color: #8544f8;
+}
+.list-cat-yellow{
+	background-color: #fcaf17;
+}
+.list-cat-purple{
+	background-color: @color-purple;
+}
+.list-cat-brown{
+	background-color: #a0713d;
+}
+.list-cat-red{
+	background-color: #d54344;
+}
+.text-alert{
+	font-size: 12px;
+	font-style: italic;
+}
+.border-right{
+	border-right: 1px solid #3f3f3f;
+}
+.box-bg-red{
+	background-color: #e50000;
+}
+.box-bg-green{
+	background-color: #17c600;
+}
+.box-bg-gray{
+	background-color: #515151;
+}
+.csSlideOuter .csPager.cSpg > li a {
+	-webkit-transition: none;
+	transition: none;
+}
+
+
+@media (min-width: 1200px){
+	#lay-intranet{
+
+	}
+	#lay-external{
+
+	}
+}
+@media (min-width: 992px)  and  (max-width: 1199px){
+
+	#lay-intranet{
+
+	}
+	#lay-external{
+		.csSlideOuter .csPager.cSpg {
+			top: 35%;
+		}
+	}
+}
+@media (min-width: 768px)  and  (max-width: 991px){
+	// .csPager{
+	// 	display: none;
+	// }
+	#lay-intranet{
+		width: 1200px;
+	}
+	#lay-external{
+		width: 1200px;
+	}
+}
+@media (max-width: 767px){
+	#content-list-news{
+		height: auto !important;
+	}
+	#banner-slide li .banner-slide-title{
+		padding: 0 10px;
+	}
+	#banner-slide-panel .csPager{
+		top: 72% !important;
+	}
+	#lay-intranet{
+		#eic-analysis-panel{
+			margin: 10px 0;
+		}
+	}
+	#lay-external{
+		#banner-slide-panel{
+			height: auto;
+		}
+		#box-industries-panel{
+			margin: 0 0 10px 0;
+		}
+	}
+}
+

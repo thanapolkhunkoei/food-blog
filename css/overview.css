@@ -1,0 +1,28 @@
+body{
+	/*background-color: blue !important;*/
+}
+
+#test{
+	color: red;
+	/*background-color: blue;*/
+}
+
+
+
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.container{
+	background-color: gray;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+input {
+	margin: 20px 10px;
+}

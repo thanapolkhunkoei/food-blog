@@ -1,0 +1,140 @@
+body {
+    font-family: sans-serif;
+}
+
+#remove {
+    color: red;
+    text-decoration: underline;
+}
+
+input[type="file"] {
+    display: block;
+    /* display: none; */
+  }
+  .imageThumb {
+    max-height: 75px;
+    border: 2px solid;
+    padding: 1px;
+    cursor: pointer;
+  }
+  .pip {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+  }
+  .remove {
+    display: block;
+    /* background: #444; */
+    /* border: 1px solid black; */
+    /* color: white; */
+    text-align: center;
+    cursor: pointer;
+  }
+  .remove:hover {
+    color: black;
+  }
+
+  
+  .blue-text {
+    color: green;
+  }
+  
+  .underline {
+    text-decoration: underline;
+  }
+  
+  .drop-field {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .drop-field,
+  .drop-area {
+    height: 300px;
+    width: 400px;
+  }
+  
+  .drop-field .browse {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  
+  .drop-field .drop-area {
+    display: block;
+    border: 1px dashed gray;
+    position: relative;
+  }
+  
+  .drop-field,
+  .drop-area,
+  .drop-field .browse {
+    transition: all 0.3s;
+  }
+  
+  .drop-field.loaded .drop-area {
+    border: 1px dashed black;
+  }
+  
+  .drop-field .browse {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  
+  .drop-field.loaded .browse {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .drop-field.hover .drop-area {
+    border: 1px solid black;
+  }
+  
+  .drop-field .drop-area input[type="file"] {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: block;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    opacity: 0.000001;
+  }
+  
+  /* .drop-field .file-list {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    text-align: center;
+  } */
+  
+  .drop-field .remove {
+    color: red;
+    /* position: absolute;
+    left: 20px;
+    top: 20px; */
+    z-index: 100;
+    /* transition: all 0.3s;
+    opacity: 0;
+    transform: translateY(-100%); */
+    cursor: pointer;
+  }
+  
+  .drop-field .remove:hover {
+    color: black;
+  }
+  
+  .drop-field.loaded .remove {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+  
+  
+
+  
